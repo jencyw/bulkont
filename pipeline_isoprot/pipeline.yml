@@ -1,0 +1,31 @@
+
+###########################################
+#                                         #
+# configuration file for pipeline_isoprot #
+# Author: Chen-Yi Wang                    #
+# Latest update: Jun 20, 2024             #
+#                                         #
+###########################################
+
+# This is a downstream analysis for protein isoform analysis, using R package msa and ragp
+# The input data matrix is the output files of dtu workflow
+# The output files of this anlysis including the results of multisequence alignment and the protein domains in the isoforms  
+# Description for features in the protein domain analysis: https://github.com/missuse/ragp/blob/master/R/plot_prot.R
+# TM: transmembrane regions
+# N-sp: N-terminal signal peptide
+# Omega-site (gpi): glycosylphosphatidylinositol attachment
+
+
+# Please check the requirement before initiate the pipeline
+
+#Requirement: 
+
+### Load R: module load R-cbrg/
+### Availability of the required R packages
+### The folder "StageR_df_plotproportions"
+ 
+
+folder_path: "StageR_df_plotproportions"
+
+
+

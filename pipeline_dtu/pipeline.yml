@@ -1,0 +1,45 @@
+
+#######################################
+#                                     #
+# configuration file for pipeline_dtu #
+# Author: Chen-Yi Wang                #
+# Latest update: Sep 10, 2024         #
+#                                     #
+#######################################
+
+# This is a downstream analysis for differential transcript usage analysis, using R package DRIMSeq and stageR
+# The input count matrix of transcripts is generated from Bambu R package
+# The output files of this anlysis are in the "DTU_DRIMSeq.dir", including the spreadsheets of genes (res, sig,and statistics after stageR),plots of genes significant in DTU  
+
+# Please check the requirement before initiate the pipeline
+
+#Requirement: 
+
+### Load R: module load R-cbrg/
+
+### Availability of the required R packages
+
+### The following two spreadsheets in the work directory 
+# 1. count matrix: counts_transcript.txt 
+# 2. sample_sheet.csv:
+#      two essential columns:  sample_id and condition
+# 
+
+annotation: "/project/cribbslab/shared/proj013/analyses/reference/wf-transcriptomes/hg38_gencode/gencode.v44.annotation.sqlite"
+
+# the treatment group for the comparison with the control group (same input name as in the column "condition") 
+
+control: [control group]
+treatment: [treatment group]
+
+# Parameter for DRIMSeq filtering
+min_samps_feature_expr: 1
+min_feature_expr: 3
+min_samps_gene_expr: 3
+min_gene_expr: 10
+
+# threshold for the output of significant genes and the related plots
+ 
+padj: 0.05
+
+
