@@ -26,6 +26,7 @@
 # 
 
 annotation: "gencode.v44.annotation.sqlite"
+txp_info: "Homo_sapiens_Ensembl110.tsv"
 
 # the treatment group for the comparison with the control group (same input name as in the column "condition") 
 
