@@ -23,7 +23,7 @@
 # 1. count matrix: counts_transcript.txt 
 # 2. sample_sheet.csv:
 #      two essential columns:  sample_id and condition
-# 
+# 3. Homo_sapiens_Ensembl110.tsv: a table containing information about transcripts including biotype, external name, and information about genes including biotype, uniprot_id.  
 
 annotation: "gencode.v44.annotation.sqlite"
 txp_info: "Homo_sapiens_Ensembl110.tsv"
