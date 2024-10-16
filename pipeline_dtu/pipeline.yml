@@ -25,7 +25,7 @@
 #      two essential columns:  sample_id and condition
 # 
 
-annotation: "/project/cribbslab/shared/proj013/analyses/reference/wf-transcriptomes/hg38_gencode/gencode.v44.annotation.sqlite"
+annotation: "gencode.v44.annotation.sqlite"
 
 # the treatment group for the comparison with the control group (same input name as in the column "condition") 
 
