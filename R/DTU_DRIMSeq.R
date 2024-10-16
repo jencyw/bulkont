@@ -283,7 +283,7 @@ dir.create("DTU_DRIMSeq.dir/StageR_transcript_structure_annotation")
 library(magrittr)
 library(ggtranscript)
 library(rtracklayer)
-gtf <- read_tsv(gtf2)
+gtf <- read_tsv(gtf)
 
 for (alias in names(gene_names)){
   
