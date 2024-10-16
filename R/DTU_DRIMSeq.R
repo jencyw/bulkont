@@ -111,7 +111,7 @@ res.txp$adj_pvalue <- no.na(res.txp$adj_pvalue)
 res.txp$lr <- no.na(res.txp$lr)
 res.txp$ensembl_transcript_id <- strp(res.txp$feature_id)
 
-txp.info <- read_tsv("/project/cribbslab/shared/proj013/analyses/reference/wf-transcriptomes/down_stream/Homo_sapiens_Ensembl110.tsv")
+txp.info <- read_tsv(txp_info)
 res.txp.info <- merge(res.txp, txp.info, by.x= "ensembl_transcript_id", by.y="tx_id", all.x=T)
 write_tsv(res.txp.info, file = "DTU_DRIMSeq.dir/res_transcripts_info_Ensemblv110.tsv")
 
@@ -283,7 +283,7 @@ dir.create("DTU_DRIMSeq.dir/StageR_transcript_structure_annotation")
 library(magrittr)
 library(ggtranscript)
 library(rtracklayer)
-gtf <- read_tsv(gtf)
+gtf <- read_tsv(gtf2)
 
 for (alias in names(gene_names)){
   
