@@ -21,9 +21,8 @@ The pipeline consists of the following steps:
     * Map reads to transcripts using minimap2.
     * Processing and sorting BAM files using samtools.
     * Transcript identification and discovery using Bambu.
-    * Diffenrential gene expression analysis by DESeq2.
-    * Diffenrential transcript usage analysis by DRIMSeq and StageR.
-    * Downstream analyses including protein alignment, domain search. 
+    * Diffenrential transcript usage analysis by DRIMSeq and StageR (pipeline_dtu.py).
+    * Downstream analyses including protein alignment, domain search (pipeline_isoprot.py). 
 
 Usage
 =====
