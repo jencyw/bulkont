@@ -33,6 +33,8 @@ min_gene_expr <- ini$min_gene_expr
 padj <- ini$padj
 control <- ini$control
 treatment <- ini$treatment
+txp_info <- ini$txp_info
+gtf <- ini$gtf
 
 ### Load data and annotation reference
 # sample sheet: sample_id and condition
