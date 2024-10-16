@@ -283,7 +283,7 @@ dir.create("DTU_DRIMSeq.dir/StageR_transcript_structure_annotation")
 library(magrittr)
 library(ggtranscript)
 library(rtracklayer)
-gtf <- read_tsv("/project/cribbslab/shared/proj013/analyses/reference/wf-transcriptomes/down_stream/Homo_sapiens.GRCh38.110.chr_patch_hapl_scaff.gtf.tsv")
+gtf <- read_tsv(gtf)
 
 for (alias in names(gene_names)){
   
