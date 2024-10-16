@@ -18,6 +18,6 @@
 ### Load R: module load R-cbrg/
 ### Availability of the required R packages
 
-gtf: "/project/cribbslab/shared/proj013/analyses/reference/wf-transcriptomes/hg38_gencode/gencode.v44.annotation.gtf"
-genome: "/project/cribbslab/shared/proj013/analyses/reference/Talon/GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta"
+gtf: "gencode.v44.annotation.gtf"
+genome: "GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta"
 bam: path to bam files
