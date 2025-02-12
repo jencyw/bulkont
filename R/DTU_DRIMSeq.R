@@ -45,7 +45,7 @@ samps = data.frame(sample_id = samps$sample_id, group = samps$condition)
 
 # Load count matrix
 # make sure the order of the columns are the same with the order in the sample sheet
-df <- read.table("Bambu_output/counts_transcript.txt", sep = "\t", header = TRUE)
+df <- read.table("Bambu_output/merged/counts_transcript.txt", sep = "\t", header = TRUE)
 colnames(df) <- gsub("\\.bam$", "", colnames(df)) 
 df <- df[!grepl("^Bambu", df$TXNAME),]
 txdf <- df[,c(1:2)]
