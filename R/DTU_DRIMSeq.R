@@ -96,7 +96,7 @@ res <- res[order(res$pvalue, decreasing = FALSE), ]
 res$ensembl_gene_id <- strp(res$gene_id)
 no.na <- function(x) ifelse(is.na(x), 1, x)
 library(biomaRt)
-mart <- useMart("ensembl","hsapiens_gene_ensembl")##hsapiens_gene_ensembl
+mart <- useMart("ensembl",dataset = "hsapiens_gene_ensembl", host = "https://useast.ensembl.org")##hsapiens_gene_ensembl
 ensemble2gene <- getBM(attributes=c("external_gene_name","ensembl_gene_id"),
                        filters = "ensembl_gene_id",
                        values = res$ensembl_gene_id, 
